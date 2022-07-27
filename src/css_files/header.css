@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    /* width: 80%; */
+    height: 104px;
+    justify-content: space-between;
+    background-color:white;
+}
+
+.allIcon{
+   /* padding-top: 20px; */
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.allIcon img{
+    width: 20px;
+    height: 26px;
+    padding-left: 20px;
+}
+.allIcon p{
+    /* padding-left: 10px; */
+    margin: auto;
+    display: flex;
+    padding-right: 10px;
+}

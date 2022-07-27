@@ -1,0 +1,41 @@
+.sidebar{
+    
+    width: 20%;
+    /* height: -webkit-fill-available; */
+    background-color: #1A344B;
+}
+.sidebar_img{
+    display: flex;
+    justify-content: space-between;
+    height: 104px;
+    background-color: gainsboro;
+}
+.sidebar_img img{    
+    float: left;
+}
+.sidebar_img h1{
+    color: rebeccapurple;
+    font-size: x-large;
+}
+.setting{
+    float: right;
+
+}
+/* .sidebar p{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+} */
+.sidebarIcon{
+    color: white;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    height: 90px;
+}  
+.plushIcon{
+    color: #84AC04;
+    /* border-radius: 20px; */
+}

@@ -1,0 +1,30 @@
+.homepage{
+    width: 80%;
+}
+.firstbox{
+    background-color: white;
+    width: 350px;
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+.firstbox h1{
+    font-size: xxx-large;
+}
+.firstbox h2{
+    color:#1A344B;
+    /* width: 50px; */
+    /* height: 100px; */
+    font-weight: 500;
+    font-size: inherit;
+}
+.allbox{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.underbox{
+    line-height: 14px;
+    width: 110px;
+}
