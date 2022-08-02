@@ -1,0 +1,68 @@
+.positionpage{
+    width: 80%;
+}
+.backgroundbox{
+    background-color: white;
+    /* width: 98%; */
+    height:auto;
+    border-radius: 20px 20px 0px 0px;
+    padding-left: 20px;
+    padding-bottom: 70px;
+}
+.firstbox22{
+    background-color: #1A344B;
+    /* position: absolute; */
+    width: 100%;
+    height: 46px;
+    border-radius: 20px 20px 0px 0px;
+}
+.buttonMainDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+    height: -webkit-fill-available;
+}
+.secondbox  {
+    width: inherit;
+    background: #D5D3D3;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 0px;
+    
+}
+.secondbox1{
+    height: 31px;
+    text-shadow: 0 0 black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1350px;
+}
+
+.thirdbox{
+    height: 78px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 12px;
+}
+/* .thirdbox1{
+    background-color: #F0F0F0;
+    height: 78px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 12px;
+} */
+.thirdbox5{
+    height: 78px;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 97px;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 12px;
+}

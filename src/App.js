@@ -1,15 +1,24 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 // import Header from "./header";
 import Home from "./home";
+
+import Positions from "./positions";
 import Sidebar from "./sidebar";
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      {/* <Header /> */}
-      <Home />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Sidebar />
+        <Routes>
+          <>
+            <Route path="/" element={<Home />} />
+            <Route path="/position" element={<Positions />} />
+          </>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

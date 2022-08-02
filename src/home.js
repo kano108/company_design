@@ -23,10 +23,20 @@ import line from "./images/Line 10.png";
 import { Avatar } from "@material-ui/core";
 import CheckBoxIcon from "@material-ui/icons/CheckBox";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
-import vector from "./images/Vector.jpg"
-import PermIdentityIcon from '@material-ui/icons/PermIdentity';
+import vector from "./images/Vector.jpg";
+import PermIdentityIcon from "@material-ui/icons/PermIdentity";
+import vector1 from "./images/Vector.png";
+import Ellipse29 from "./images/Ellipse 29.png";
+import MailIcon from "@material-ui/icons/Mail";
+import ellipse30 from "./images/Ellipse 30.png";
+import ellipse31 from "./images/Ellipse 31.png";
+import ellipse32 from "./images/Ellipse 32.png";
+import rectangle200 from "./images/Rectangle 200.png";
+import ellipse33 from "./images/Ellipse 33.png";
+import ellipse34 from "./images/Ellipse 34.png";
 
 const Home = () => {
+  
   return (
     <div className="homepage">
       <div>
@@ -76,11 +86,14 @@ const Home = () => {
       </div>
       <div className="mainmiddle">
         <div className="middalcontent">
-          <BusinessCenterIcon />
+          <div className="con_header">
+
+          <BusinessCenterIcon style={{paddingRight:"10px"}}/>
           <p>
             My Positions
             <ArrowDropDownIcon />
           </p>
+          </div>
 
           <div>
             {/* start */}
@@ -370,9 +383,9 @@ const Home = () => {
 
         {/* middal box start */}
         <div className="middlacontebt6">
-          <div className="middalcontent">
-            <div>
-              <BusinessCenterIcon />
+          <div className="middalcontent" style={{ paddingBottom: "44%" }}>
+            <div className="con_header">
+              <BusinessCenterIcon style={{paddingRight:"10px"}} />
               <p>
                 New Candidates
                 <ArrowDropDownIcon />
@@ -429,19 +442,28 @@ const Home = () => {
             </div>
           </div>
           <br />
-          <div className="middalcontent">
-            <CheckBoxIcon style={{ color: "#1A344B" }} />
+          <div className="middalcontent" style={{ paddingBottom: "60%" }}>
+            <div className="con_header">
+
+            <CheckBoxIcon style={{ color: "#1A344B",paddingRight:"10px" }} />
             <h3>My Tasks</h3>
+            </div>
             <div className="middal10">
-              <div>
+              <div style={{ paddingLeft: "20px", paddingTop: "20px" }}>
                 <CheckCircleOutlineIcon />
               </div>
-              <div>
+              <div style={{ paddingLeft: "20px" }}>
                 <h3>Follow Up With Keysha</h3>
-                <div style={{display:"flex"}}>
-                  <img src={vector} alt=""/>
+                <div
+                  style={{ display: "flex", justifyContent: "space-evenly" }}
+                >
+                  <img
+                    src={vector}
+                    alt=""
+                    style={{ height: "20px", paddingTop: "17px" }}
+                  />
                   <p>Due Tomorrow</p>
-                  <PermIdentityIcon/>
+                  <PermIdentityIcon style={{ paddingTop: "15px" }} />
                   <p>You</p>
                 </div>
               </div>
@@ -451,9 +473,258 @@ const Home = () => {
         {/* middal box close */}
 
         {/* lastbox start */}
-        <div className="middalcontent">
-          <div>
-            <h1>gaurang theshya</h1>
+        <div>
+          <div className="middalcontent">
+            <div style={{ display: "flex" }}>
+              <div style={{ display: "grid" }}>
+                <img src={vector1} alt="" style={{ paddingTop: "15px" }} />
+                <img src={Ellipse29} alt="" style={{ paddingTop: "130px" }} />
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "baseline",
+                }}
+              >
+                <p>My Agenda</p>
+                <p
+                  style={{
+                    textTransform: "capitalize",
+                    width: "300px",
+                    fontSize: "17.5px",
+                  }}
+                >
+                  syed samiur rahman meeting (deputy director of parks and
+                  recreation)
+                </p>
+                <div style={{ display: "flex" }}>
+                  <img
+                    src={vector}
+                    alt=""
+                    style={{ height: "20px", paddingTop: "18px" }}
+                  />
+                  <p>12:15 PM (EDT)</p>
+                </div>
+              </div>
+              {/* <img src={Ellipse29} alt="" /> */}
+            </div>
+          </div>
+
+          <br />
+
+          <div className="middalcontent">
+            <div className="con_header">
+              <MailIcon style={{paddingRight:"10px"}}/>
+              <p>
+                All Conversation
+                <ArrowDropDownIcon />
+                
+              </p>
+            </div>
+            <div>
+              <div
+                style={{
+                  display: "flex",
+                  backgroundColor: "white",
+                  width: "460px",
+                  height: "80px",
+                }}
+              >
+                <div>
+                  <img src={ellipse30} alt="" style={{ padding: "10px" }} />
+                </div>
+                <div style={{ textAlign: "start" }}>
+                  <p>Ron Swanson</p>
+                  <p>Agreed Why Would Anybody Ever Eat Anything Besides</p>
+                </div>
+                <div style={{ width: "70px", display: "flex" }}>
+                  <p style={{}}>28d Ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ backgroundColor: "white", width: "460px" }}>
+              <img src={line} alt="" />
+            </div>
+
+            <div>
+              <div
+                style={{
+                  display: "flex",
+                  backgroundColor: "white",
+                  width: "460px",
+                }}
+              >
+                <div>
+                  <img src={ellipse31} alt="" style={{ padding: "10px" }} />
+                </div>
+                <div style={{ textAlign: "start" }}>
+                  <p>Sandra Sosa</p>
+                  <p>test sandra sosa lorem ipsum is a dummy</p>
+                </div>
+                <div style={{ width: "70px", display: "flex" }}>
+                  <p style={{}}>1mo ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ backgroundColor: "white", width: "460px" }}>
+              <img src={line} alt="" />
+            </div>
+
+            <div>
+              <div
+                style={{
+                  display: "flex",
+                  backgroundColor: "white",
+                  width: "460px",
+                }}
+              >
+                <div>
+                  <img src={ellipse32} alt="" style={{ padding: "10px" }} />
+                  <div style={{ paddingLeft: "10px" }}>
+                    <Avatar
+                      style={{
+                        backgroundColor: "#1A344B",
+                        width: "25px",
+                        height: "25px",
+                      }}
+                    >
+                      L
+                    </Avatar>
+                  </div>
+                </div>
+                <div style={{ textAlign: "start" }}>
+                  <p>Syed Saimur Rahman</p>
+                  <p>Head of Sales learner nation</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      height: "30px",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      src={rectangle200}
+                      alt=""
+                      style={{ height: "inherit" }}
+                    />
+                    <p style={{ fontSize: "medium" }}>
+                      hi, syed, you re confirmed for the following inter....
+                    </p>
+                  </div>
+                </div>
+                <div style={{ width: "70px", display: "flex" }}>
+                  <p style={{}}>5h ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ backgroundColor: "white", width: "460px" }}>
+              <img src={line} alt="" />
+            </div>
+
+            <div>
+              <div
+                style={{
+                  display: "flex",
+                  backgroundColor: "white",
+                  width: "460px",
+                }}
+              >
+                <div>
+                  <img src={ellipse33} alt="" style={{ padding: "10px" }} />
+                  <div style={{ paddingLeft: "10px" }}>
+                    <Avatar
+                      style={{
+                        backgroundColor: "#1A344B",
+                        width: "25px",
+                        height: "25px",
+                      }}
+                    >
+                      K
+                    </Avatar>
+                  </div>
+                </div>
+                <div style={{ textAlign: "start" }}>
+                  <p>Lindsay Fernadez</p>
+                  <p>senior project manager vizergy</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      height: "30px",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      src={rectangle200}
+                      alt=""
+                      style={{ height: "inherit" }}
+                    />
+                    <p style={{ fontSize: "medium" }}>
+                      hi, lindsey please sign.
+                    </p>
+                  </div>
+                </div>
+                <div style={{ width: "70px", display: "flex" }}>
+                  <p style={{}}>5h ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ backgroundColor: "white", width: "460px" }}>
+              <img src={line} alt="" />
+            </div>
+
+            <div>
+              <div
+                style={{
+                  paddingBottom: "20px",
+                  display: "flex",
+                  backgroundColor: "white",
+                  width: "460px",
+                }}
+              >
+                <div>
+                  <img src={ellipse34} alt="" style={{ padding: "10px" }} />
+                  <div style={{ paddingLeft: "10px" }}>
+                    <Avatar
+                      style={{
+                        backgroundColor: "#1A344B",
+                        width: "25px",
+                        height: "25px",
+                      }}
+                    >
+                      S
+                    </Avatar>
+                  </div>
+                </div>
+                <div style={{ textAlign: "start" }}>
+                  <p>Keysha Rolon</p>
+                  <p>uSA West Markets sales executive xYZCO</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      height: "30px",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      src={rectangle200}
+                      alt=""
+                      style={{ height: "inherit" }}
+                    />
+                    <p style={{ fontSize: "medium" }}>
+                      hi, keysha. we’d like to ask you a few more que....
+                    </p>
+                  </div>
+                </div>
+                <div style={{ width: "70px", display: "flex" }}>
+                  <p style={{}}>5h ago</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         {/* last box close */}
