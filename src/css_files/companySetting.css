@@ -1,0 +1,36 @@
+.companySetting{
+    width: 100%;
+    background-color: white;
+}
+.leftIcon{
+   display: flex;
+   justify-content: space-between;
+
+   width: 90%;
+   align-items: center;
+   margin: auto;
+}
+.image1{
+    position: absolute;
+}
+.image2{
+    position: absolute;
+    margin: 8px;
+}
+.allLeftIcon{
+    text-indent: 65px;
+    display: flex;
+    flex-direction: column;
+    width: 11%;
+    padding-left: 84px;
+}
+.middalmain{
+    width: 80%;
+    border: 1px solid #C4C4C4;  
+    border-radius: 12px;
+
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+}

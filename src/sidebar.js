@@ -27,15 +27,18 @@ import vector55 from "./images/Vector55.png";
 import vector56 from "./images/Vector56.png";
 import vector57 from "./images/Vector57.png";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
+
+// import { useState } from "react";
 
 const Sidebar = () => {
-  const [bgcolor , setBgcolor] = useState(true)
+  //   const [style , setStyle] = useState("sidebarIcon")
 
- 
-
+  //  const changeStyle = () =>{
+  //     setStyle("sidebarIcon2")
+  //  }
+  // const [isActive, setIsactive] = useState(false);
   return (
-
     <div className="sidebar">
       <div className="sidebar_img">
         <img src={logo} alt="" />
@@ -126,14 +129,29 @@ const Sidebar = () => {
                   </div>
                 </div>
 
-                <div className="modelcontent">
-                  <div>
-                    <img src={vector50} alt="" />
-                  </div>
-                  <div>
-                    <p>Company Settings</p>
-                  </div>
-                </div>
+                
+                <NavLink to="/companySetting">
+                    <div className="modelcontent">
+                      <div>
+                        <img src={vector50} alt="" />
+                      </div>
+                      <div>
+                        <p>Company Settings</p>
+                      </div>
+                    </div>
+                  </NavLink>                  
+                  
+
+                {/* <NavLink to="/companySetting">
+                    <div className="modelcontent">
+                      <div>
+                        <img src={vector50} alt="" />
+                      </div>
+                      <div>
+                        <p>Company Settings</p>
+                      </div>
+                    </div>
+                  </NavLink> */}
 
                 <div className="modelcontent">
                   <div>
@@ -249,22 +267,40 @@ const Sidebar = () => {
         </div>
       </div>
       <div>
-      
-      {
-        bgcolor ?  <NavLink to="/" onClick={()=>setBgcolor(true)}>
-                    <span className="sidebarIcon">
-                    <HomeIcon /> Dashboard
-                    </span>
-                    </NavLink>
+        {/* <NavLink to="/" activeClassName="sidebarIcon2">
+          <span className="sidebarIcon" >
+            <HomeIcon /> Dashboard
+          </span>
+        </NavLink> */}
 
-                :   <NavLink to="/" onClick={()=>setBgcolor(false)}>
-                    <span>
-                    <HomeIcon /> Dashboard
-                    </span>
-                    </NavLink>
-
-      } 
-       
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+            paddingTop: "50px",
+          }}
+        >
+          <span className="sidebarIcon">
+            <NavLink
+              to="/"
+              style={({ isActive }) => {
+                return {
+                  backgroundColor: isActive ? "#FFFFFF" : "",
+                  color: isActive ? "#1A344B" : "#FFFFFF",
+                  borderRadius: isActive ? "10px 0px 0px 10px" : "",
+                  width: isActive ? "257px" : "",
+                  display: isActive ? "flex" : "flex",
+                  height: isActive ? "45px" : "",
+                  justifyContent: isActive ? "center" : "center",
+                  alignItems: isActive ? "center" : "center",
+                  paddingRight: isActive ? "21px" : "80px",
+                };
+              }}
+            >
+              <HomeIcon /> Dashboard
+            </NavLink>
+          </span>
+        </div>
 
         <span className="sidebarIcon">
           <MailIcon /> Inbox
@@ -279,7 +315,7 @@ const Sidebar = () => {
           <SignalCellularAltIcon /> Reports
         </span>
 
-        <NavLink to="/position">
+        {/* <NavLink to="/position">
           <span className="sidebarIcon">
             <div style={{ display: "flex" }}>
               <img
@@ -291,7 +327,42 @@ const Sidebar = () => {
               <AddCircleIcon className="plushIcon" />
             </div>
           </span>
-        </NavLink>
+        </NavLink> */}
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+            // paddingTop: "50px",
+          }}
+        >
+          <span className="sidebarIcon">
+            <NavLink
+              to="/position"
+              style={({ isActive }) => {
+                return {
+                  backgroundColor: isActive ? "white" : "",
+                  color: isActive ? "#1A344B" : "white",
+                  borderRadius: isActive ? "10px 0px 0px 10px" : "",
+                  width: isActive ? "257px" : "",
+                  display: isActive ? "flex" : "flex",
+                  height: isActive ? "45px" : "",
+                  justifyContent: isActive ? "center" : "center",
+                  alignItems: isActive ? "center" : "center",
+                  paddingRight: isActive ? "41px" : "84px",
+                };
+              }}
+            >
+              <img
+                src={briefcase}
+                alt=""
+                style={{ width: "20px", height: "20px", background: "#1A344B" }}
+              />{" "}
+              Position
+              <AddCircleIcon className="plushIcon" />
+            </NavLink>
+          </span>
+        </div>
 
         <span className="sidebarIcon">
           <PermIdentityIcon /> Candidates
