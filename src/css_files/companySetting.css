@@ -32,5 +32,40 @@
     padding-left: 20px;
     display: flex;
     flex-direction: column;
-
+    text-align-last: start;
+}
+.buttonStyle{
+    background: #DADADA;
+    /* border-radius: 2.70147px; */
+    width: 111px;
+    display: flex;
+    height: 28px;
+    align-items: center;
+    justify-content: space-evenly;
+    /* font-size: inherit; */
+    border-color: #DADADA;
+}
+.buttonhead{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+}
+.buttonJoin1{
+    background: #DADADA;
+    border-radius: 2.70147px;
+    color: #1A344B;
+    height: 38px;
+    width: 93px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.buttonJoin2{
+    background: #76D691;
+    border-radius: 2.70147px;
+    font-weight: 500;
+    font-size: 18px;
+    height: 38px;
+    width: 93px;
+    color: white;
 }
