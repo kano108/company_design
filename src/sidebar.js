@@ -27,17 +27,24 @@ import vector55 from "./images/Vector55.png";
 import vector56 from "./images/Vector56.png";
 import vector57 from "./images/Vector57.png";
 import { NavLink } from "react-router-dom";
-// import { useState } from "react";
+import vector84 from "./images/Vector84.png"
+import vector85 from "./images/Vector85.png"
 
-// import { useState } from "react";
 
-const Sidebar = () => {
-  //   const [style , setStyle] = useState("sidebarIcon")
 
-  //  const changeStyle = () =>{
-  //     setStyle("sidebarIcon2")
-  //  }
-  // const [isActive, setIsactive] = useState(false);
+
+const Sidebar = (props) => {
+  const {setModalOpen} = props
+
+  console.log("modalOpen1",props);
+ 
+  const StartModel =() =>{
+    setModalOpen(true)
+ }
+
+
+
+
   return (
     <div className="sidebar">
       <div className="sidebar_img">
@@ -129,18 +136,25 @@ const Sidebar = () => {
                   </div>
                 </div>
 
+                    {/* <button onClick={StartModel}>
+                      click
+                    </button> */}
                 
-                <NavLink to="/companySetting">
-                    <div className="modelcontent">
-                      <div>
-                        <img src={vector50} alt="" />
-                      </div>
-                      <div>
-                        <p>Company Settings</p>
-                      </div>
+                <NavLink to="/CompanySetting" onClick={StartModel}>
+                {/* <NavLink to="/CompanySetting" > */}
+
+                  <div className="modelcontent" >
+                    <div>
+                      <img src={vector50} alt="" />
                     </div>
-                  </NavLink>                  
-                  
+                    <div> 
+                      <p>Company Settings</p>
+                      {/* <button onClick={()=>{setModalOpen(true)}}>
+                      Company Settings
+                      </button> */}
+                    </div>
+                  </div>
+                </NavLink>
 
                 {/* <NavLink to="/companySetting">
                     <div className="modelcontent">
@@ -155,7 +169,7 @@ const Sidebar = () => {
 
                 <div className="modelcontent">
                   <div>
-                    <SettingsIcon />
+                    <img src={vector84} alt=""/>
                   </div>
                   <div>
                     <p>Recruiting Preferences</p>
@@ -167,7 +181,7 @@ const Sidebar = () => {
 
                 <div className="modelcontent">
                   <div>
-                    <MailIcon />
+                    <img src={vector85} alt=""/>
                   </div>
                   <div>
                     <p>Invite Members</p>
@@ -364,10 +378,12 @@ const Sidebar = () => {
           </span>
         </div>
 
-        <span className="sidebarIcon">
-          <PermIdentityIcon /> Candidates
-          <AddCircleIcon className="plushIcon" />
-        </span>
+        
+          <span className="sidebarIcon">
+            <PermIdentityIcon /> Candidates
+            <AddCircleIcon className="plushIcon" />
+          </span>
+        
       </div>
     </div>
   );

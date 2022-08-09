@@ -52,41 +52,44 @@ const Home = () => {
               <img
                 src={job}
                 alt=""
-                style={{ width: "75.52px", height: "75.52px" }}
+                style={{ width: "75.52px", height: "75.52px",margin:"18px"}}
               />
-              <img src={rectangal} alt="" />
+              <img src={rectangal} alt="" style={{paddingRight: "26px"}}/>
               <div className="underbox">
                 <h1>0</h1>
                 <h2> Position Activated</h2>
               </div>
-              <AdjustIcon />
+              <AdjustIcon style={{margin:"10px"}}/>
             </div>
+
             <div className="firstbox">
-              <img src={candidate} alt="" />
-              <img src={rectangal} alt="" />
+              <img src={candidate} alt=""  style={{ width: "75.52px", height: "75.52px",margin:"18px"}}/>
+              <img src={rectangal} alt="" style={{paddingRight: "26px"}}/>
               <div className="underbox">
                 <h1>1</h1>
                 <h2>New Candidates</h2>
               </div>
-              <AdjustIcon />
+              <AdjustIcon style={{margin:"10px"}}/>
             </div>
+
             <div className="firstbox">
-              <img src={teamleader} alt="" />
-              <img src={rectangal} alt="" />
+              <img src={teamleader} alt="" style={{ width: "75.52px", height: "75.52px",margin:"18px"}}/>
+              <img src={rectangal} alt="" style={{paddingRight: "26px"}}/>
               <div className="underbox">
                 <h1>2</h1>
                 <h2>Candidates Progressing</h2>
               </div>
-              <AdjustIcon />
+              <AdjustIcon style={{margin:"10px"}}/>
             </div>
+
             <div className="firstbox">
-              <img src={hire} alt="" />
-              <img src={rectangal} alt="" />
+              <img src={hire} alt="" style={{ width: "75.52px", height: "75.52px",margin:"18px"}}/>
+              <img src={rectangal} alt="" style={{paddingRight: "26px"}}/>
               <div className="underbox">
                 <h1>0</h1>
                 <h2>Candidates Hired</h2>
               </div>
-              <AdjustIcon />
+              <AdjustIcon style={{margin:"10px"}}/>
             </div>
           </div>
           <div className="mainmiddle">

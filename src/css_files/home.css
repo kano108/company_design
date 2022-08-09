@@ -6,7 +6,8 @@
     width: 350px;
     height: 110px;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
     border-radius: 10px;
     /* border-radius: 20px 20px 0px 0px; */
 }
@@ -28,6 +29,8 @@
 .underbox{
     line-height: 14px;
     width: 110px;
+
+    margin: -9px;
 }
 .middalcontent{
     background: #F7F2F2;

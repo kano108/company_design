@@ -25,14 +25,20 @@
     padding-left: 84px;
 }
 .middalmain{
-    width: 80%;
+    /* width: 80%;
     border: 1px solid #C4C4C4;  
-    border-radius: 12px;
+    border-radius: 12px; */
 
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     text-align-last: start;
+    padding-bottom: 96px;
+}
+.middalmain1{
+    width: 80%;
+    border: 1px solid #C4C4C4;  
+    border-radius: 12px;
 }
 .buttonStyle{
     background: #DADADA;
@@ -49,7 +55,9 @@
     display: flex;
     justify-content: space-between;
     width: 95%;
-    align-items: center;
+    align-items:baseline;
+
+    height: 36px;
 }
 .buttonJoin1{
     background: #DADADA;
@@ -59,6 +67,7 @@
     width: 93px;
     font-size: 18px;
     font-weight: 500;
+    border-color: transparent;
 }
 .buttonJoin2{
     background: #76D691;
@@ -68,4 +77,26 @@
     height: 38px;
     width: 93px;
     color: white;
+    border-color: transparent;
+}
+.jointbutton{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+
+    height: 39px;
+}
+.lastbutton{
+    background-color: #1A344B;
+    color: white;
+    display: flex;
+    align-items: center;
+    float: right;
+    width: 198px;
+    justify-content: space-around;
+    height: 46px;
+    font-weight: 800;
+    font-size: 18px;
+
 }
