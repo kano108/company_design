@@ -8,7 +8,7 @@ import Positions from "./positions";
 import Sidebar from "./sidebar";
 
 function App() {
-  const [modalOpen, setModalOpen] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
   console.log("modelopen",modalOpen);
   return (
     <BrowserRouter>
@@ -16,9 +16,9 @@ function App() {
         <Routes>
           <>
             {/* <Sidebar /> */}
-            <Route path="/sidebar" element={< Sidebar setModalOpen={setModalOpen}/>} />
+            {/* <Route path="/sidebar" element={< Sidebar setModalOpen={setModalOpen}/>} /> */}
             <Route path="/companySetting" element={modalOpen && <CompanySetting  setModalOpen={setModalOpen}/>}/>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home  setModalOpen={setModalOpen}/>} />
             <Route path="/position" element={<Positions />} />
           </>
         </Routes>

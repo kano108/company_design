@@ -36,12 +36,14 @@ import ellipse33 from "./images/Ellipse 33.png";
 import ellipse34 from "./images/Ellipse 34.png";
 import Sidebar from "./sidebar";
 
-const Home = () => {
+const Home = (props) => {
+  const { setModalOpen} = props
+  
   return (
     <div className="homepage">
       <div style={{ display: "flex" }}>
         <div style={{ display: "flex" }}>
-          <Sidebar />
+          <Sidebar setModalOpen={setModalOpen}/>
         </div>
 
         <div style={{ width: "-webkit-fill-available" }}>

@@ -35,7 +35,7 @@ const CompanySetting = (props) => {
           <h1>Company Setting</h1>
         </div>
         <div>
-          <button onClick={closeTab}>
+          <button onClick={closeTab} style={{display:"contents"}}>
 
           <img src={ellipse80} alt="" className="image1" />
           <img src={vector80} alt="" style={{ margin: "12px" }}  />
